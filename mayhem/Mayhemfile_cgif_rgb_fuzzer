@@ -1,0 +1,8 @@
+project: cgif
+target: cgif_rgb_fuzzer
+cmds:
+  - cmd: /mayhem/cgif_rgb_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cgif_rgb_fuzzer/testsuite
